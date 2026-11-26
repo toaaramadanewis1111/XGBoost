@@ -1,0 +1,27 @@
+AG News Synthetic G1 Generation Metadata
+=========================================
+Generator/model: Python 3 deterministic template-based generation (Copilot SDK agent)
+Generation date: 2026-11-26 (UTC date may differ locally)
+Prompt/generation instructions:
+- Generate fictional, plausible English news articles in the four AG News categories.
+- Preserve the existing batch_001 200 articles unchanged.
+- Generate 29,800 additional unique articles: 7,450 per class.
+- Use professional, neutral journalistic language and fictional entities.
+- Do not add fabricated claims about real people or organizations.
+Additional articles generated: 29800
+Final synthetic article distribution:
+1 World: 7,500
+2 Sports: 7,500
+3 Business: 7,500
+4 Sci/Tech: 7,500
+Existing batch rows retained: 200
+Total final synthetic rows: 30000
+Generation limitations:
+- Articles use deterministic, combinatorial fictional scenarios and are not sourced news reports.
+- Some descriptions use generic professional phrasing rather than fully individualized reporting.
+- Real-world entities and actual events were not attributed to generated claims.
+Integrity hashes before and after generation:
+- train.csv SHA-256: e2392f9ef0d57b110c520bf6e5aa61d88904188306ca3d4e1836f30f07a98eec
+- test.csv SHA-256: de13a4c2c606958f7b9b7e3835cc5a829b1d54275bfc83ba0e0e9dad3e4a1c5b
+- existing batch SHA-256: 3eaafe9b36f558b293a8ca6530e68e3bbb1f96cbc9cc9688d1f056dc7f3b0d4e
+Validation: exactly 30,000 rows; 3 required columns; 7,500 rows per class; zero missing values, duplicate rows, duplicate titles, invalid labels, or batch overlaps; train.csv and test.csv unchanged.
